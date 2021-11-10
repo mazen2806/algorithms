@@ -31,7 +31,7 @@ class Account:
     def show_history(self):
         logger.info(f'Show account history for {self.name}')
         for transaction in self.history:
-            logger.info(f'{transaction.amount}$ {transaction.type} at {transaction.date}')
+            logger.info(f'{transaction.amount}$ {transaction.type} on {transaction.date}')
 
     def _update_history(self, amount, transaction_type):
         transaction_date = pytz.utc.localize(datetime.utcnow()).astimezone().isoformat()
