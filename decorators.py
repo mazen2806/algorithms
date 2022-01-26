@@ -1,5 +1,6 @@
 from functools import wraps
 
+
 def decorator1(f):
     @wraps(f)
     def wrapper(*args, **kwargs):
@@ -49,6 +50,7 @@ class A:
 @decorator1
 def test_decorator():
     print("Test decorator...")
+
 
 if __name__ == '__main__':
     a = A('Object A')

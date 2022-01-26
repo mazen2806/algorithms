@@ -22,6 +22,10 @@ class Account:
 
         self._update_history(amount, 'deposited')
 
+    def get_balance(self):
+        logger.info(f'Current balance: {self._balance}$')
+        return self._balance
+
     def withdraw(self, amount):
         self._balance -= amount
         logger.info(f'Current balance withdrawn: {self._balance}')

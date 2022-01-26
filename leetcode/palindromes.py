@@ -9,12 +9,14 @@ def longest_palindrome_v1(s: str) -> str:
 
     return palindrome
 
+
 # faster solution
 def longest_palindrome_v2(s: str) -> str:
     # input s: string
     # output string
     s_len = len(s)
     result = ''
+
     def get_palindrome(l, r):
         # return palindrome string
         while l >= 0 and r < s_len and s[l] == s[r]:
