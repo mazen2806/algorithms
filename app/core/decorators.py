@@ -43,6 +43,6 @@ def all_args_str(func):
 def debugger_with_args(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
-        print(f'Вызываю функцию {func.__name__} с args {args} и kwargs {kwargs}')
+        print(f'Call function {func.__name__} with args {args} and kwargs {kwargs}')
         return func(*args, **kwargs)
     return wrapper
