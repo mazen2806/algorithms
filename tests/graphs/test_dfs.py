@@ -14,6 +14,7 @@ TREE = {
     'L': [], 'M': [], 'N': [], 'O': []
 }
 
+
 def test_dfs_recursive():
     result = dfs_recursive(TREE, 'D')
     assert result, ['D','H', 'I']
@@ -22,6 +23,7 @@ def test_dfs_recursive():
 def test_dfs_recursive_with_empty_nodes():
     result = dfs_recursive(TREE, 'F')
     assert result, []
+
 
 def test_dfs_iterative():
     result = dfs_recursive(TREE, 'A')
