@@ -38,7 +38,6 @@ def dfs_iterative(tree, start):
         node = stack.pop()  # Pop a node from the stack
         if node not in visited:
             visited.add(node)  # Mark node as visited
-            print(node)        # Print the current node (for illustration)
             stack.extend(reversed(tree[node]))  # Add child nodes to stack
 
     return visited
@@ -47,4 +46,3 @@ def dfs_iterative(tree, start):
 if __name__ == "__main__":
     recursive_nodes = dfs_recursive(tree, 'D')
     iterative_nodes = dfs_iterative(tree, 'A')
-    
