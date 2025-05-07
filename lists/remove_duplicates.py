@@ -3,7 +3,7 @@ from typing import List
 
 # task description is here: https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/
 
-def remove_duplicates(nums: List[int]) -> int:
+def remove_duplicates(nums: List[int]):
     i, count = 1, len(nums)
 
     while i < len(nums):
@@ -18,7 +18,7 @@ def remove_duplicates(nums: List[int]) -> int:
 
 
 # this algorithm used 81ms of runtime
-def remove_duplicates1(nums: List[int]) -> int:
+def remove_duplicates1(nums: List[int]):
     # Pointer to the position where the next unique element should go
     i = 0
 
@@ -34,7 +34,7 @@ def remove_duplicates1(nums: List[int]) -> int:
 
 
 # this algorithm used 90ms of runtime
-def remove_duplicates2(nums: List[int]) -> int:
+def remove_duplicates2(nums: List[int]):
     if len(nums) <= 2:
         return len(nums)  # return count, not the list
 
